@@ -1,0 +1,79 @@
+body
+{
+    background-image:url("https://www.lifewire.com/thmb/o28h74cOGYYKBikaHHu2_YpcLSs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tropical-beach-wallpaper-beach-backgrounds-587fbb765f9b584db3241860.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+}
+ .form-div
+{
+border:2px solid blue;
+width:20rem;
+height:35rem;
+text-align:center;
+border-radius:20px;
+background-image:url("https://24.media.tumblr.com/6855058ef75ce5876bb2d0e4db8468e9/tumblr_miwoklbgep1qcy0o0o1_500.gif");
+box-shadow:0 0 15px red;
+
+}
+
+.form-div h2
+{
+    color:white;
+}
+
+label{
+    font-size: 1.5rem;
+    color:orange;
+    font-style:bold;
+}
+.name input, .mail input, .pass  input, .conpass input, .mobile input
+{
+    height: 2rem;
+    text-align: center;
+    border:2px solid blue;
+    margin:0.3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    width:15rem;
+}
+
+.name input, .mail input, .pass  input, .conpass input, .mobile input :focus
+{
+outline:none;
+background-color:light-blue;
+}
+
+input[type='submit']
+{
+background-color:blue;
+color:white;
+border:none;
+padding:0.5rem 1.8rem;
+margin:5px 0px 3rem 0px;
+border-radius:50px;
+}
+
+.sub input:hover
+{
+opacity:0.8;
+cursor:pointer;
+box-shadow:0 0 15px blueviolet;
+}
+
+#name_error, #pass_error, #mob_error, #mob_error1, #cpass_error, #pass_error1{
+    margin-top:0px;
+    width:15rem;
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+    background: rgba(255, 0, 0,0.4);
+    text-align: center;
+    padding:0.5rem 0.6rem;
+    border-radius: 10px;
+    border:2px solid gray;
+    display: none;
+}

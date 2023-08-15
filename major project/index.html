@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="index.css" rel="stylesheet">
+    <title>Login form</title>
+</head>
+<body>
+    <div class="form-div" >
+        <h2> Login Here</h2>
+        <form name="form" onsubmit="return validated()" method="post">
+        
+        <div class="name">
+            <label>Enter name</label><br/>
+            <input autocomplete="off" type="text" placeholder="username" required name="username" autofocus><br/>
+            <div id="name_error">more than 5 char are only allowed</div>
+        </div>
+        
+        <div class="mail">
+            <label>Enter Email id</label><br/>
+            <input type="email" placeholder="email id" required name="email">
+        </div>
+
+        <div class="pass">
+            <label>Enter password</label><br/>
+            <input type="password" placeholder="password" required name="password">
+            <div id="pass_error">more than 8 char are only allowed</div>
+            <div id="pass_error1">this password is not valid</div>
+        </div>
+
+        <div class="conpass">
+            <label>Enter password to confirm</label><br/>
+            <input type="password" placeholder="confirm password" required name="cpassword">
+            <div id="cpass_error">password should match</div>
+        </div>
+
+        <div class="mobile">
+            <label>Enter mobile number</label><br/>
+            <input type="tel" placeholder="mobile" required name="mobile">
+            <div id="mob_error">must enter 10 digits</div>
+            <div id="mob_error1">this number is not allowed</div>
+        </div>
+        
+        <div class="sub">
+            <input type="submit" value="login" name="submit">
+        </div>
+        
+        </form>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
